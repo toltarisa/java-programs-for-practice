@@ -10,7 +10,7 @@ public class CamelCase {
        return (str == null || str.isEmpty())?"": Arrays.stream(str.trim().split("\\s+"))
                 .map(s -> s.substring(0,1).toUpperCase()+s.substring(1,s.length()))
                 .collect(Collectors.joining());
-       
+
     }
 
     public static void main(String[] args) {
